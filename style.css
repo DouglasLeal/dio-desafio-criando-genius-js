@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius{
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-areas: "vermelho verde" "azul amarelo";
+    grid-gap: 25px;
+    border: 25px solid black;
+    background-color: black;
+    border-radius: 100%;
+}
+
+.vermelho {
+    grid-area: vermelho;
+    background-color: rgb(255, 33, 33);
+    border-top-left-radius: 100%;
+    opacity: .25;
+}
+
+.verde {
+    grid-area: verde;
+    background-color: rgb(3, 220, 3);
+    border-top-right-radius: 100%;
+    opacity: .25;
+}
+
+.azul {
+    grid-area: azul;
+    background-color: rgb(61, 61, 255);
+    border-bottom-left-radius: 100%;
+    opacity: .25;
+
+}
+
+.amarelo {
+    grid-area: amarelo;
+    background-color: rgb(246, 246, 55);
+    border-bottom-right-radius: 100%;
+    opacity: .25;
+}
+
+.selecionado {
+    opacity: 1;
+}
